@@ -51,3 +51,11 @@ reviewlister_db
 reviewlister_user
 
 
+## TODOs
+- Add specific Quotes resource example to the entire app
+- Add specific Quotes MVC diagram
+- Create reviewlister_db, reviewlister_user, setup permissions
+- Create Config.java file
+- Create a migration for creating the quotes table
+- Move the existing quotes to a SQL seeder file
+- Update readme with project setup instructions for students to be able to clone and get started.

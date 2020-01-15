@@ -45,7 +45,9 @@ Quotes
 
 Each quote has author and quote properties
 
-
-Config.java
+Make database for `reviewlister_db`
+`Config.java`
 reviewlister_db
 reviewlister_user
+
+

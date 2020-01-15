@@ -1,4 +1,4 @@
-package com.codeup.spacelister.controllers;
+package com.codeup.reviewlister.controllers;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletResponse;

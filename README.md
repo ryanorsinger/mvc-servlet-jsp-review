@@ -4,17 +4,17 @@
 ## General Diagram of MVC w/ Servlets and DAOs
 ![MVC Diagram](MVC-Servlets-DAO-Diagram.png)
 
+| What it does                    | Endpoint            | Request Type | Method   | Servlet            |
+| ------------------------------- | ------------------- | ------------ | -------- | ------------------ |
+| Show an index of all quotes     | /quotes             | GET          | doGet()  | QuotesIndexServlet |
+| Load the quote creation page    | /quotes/create      | GET          | doGet()  | CreateQuoteServlet |
+| Save the submitted quote        | /quotes/create      | POST         | doPost() | CreateQuoteServlet |
+| Show a random quote             | /quotes/random      | GET          | doGet()  | RandomQuoteServlet |
+| Show quote w/ id 5              | /quotes/show?id=5   | GET          | doGet()  | ShowQuoteServlet   |
+| Load quote 5 to edit            | /quotes/edit?id=5   | GET          | doGet()  | EditQuoteServlet   |
+| Save the updated edits to quote | /quotes/edit        | POST         | doPost() | EditQuoteServlet   |
+| Delete a quote #5               | /quotes/delete?id=5 | POST         | doPost() | DeleteQuoteServlet |
 
-## Specific Diagram of Quotes
-- endpoints
-    - /quotes/all
-    - /quotes/random
-    - /quotes/create
-- servlets
-- DAO
-- table
-- views
-- Quote model
 
 ## Request Inspector Example
 GET to /request-inspector

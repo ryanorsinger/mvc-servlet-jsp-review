@@ -1,0 +1,12 @@
+body {
+    background-color: salmon;
+}
+
+nav > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 2em;
+}
+nav > ul > li:hover {
+    background-color: lightgray;
+}

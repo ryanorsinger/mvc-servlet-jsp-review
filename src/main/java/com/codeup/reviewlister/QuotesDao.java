@@ -26,10 +26,6 @@ public class QuotesDao {
         List<Quote> quotes = new ArrayList<>();
         String query = "SELECT * FROM quotes";
 
-        if (quotes != null) {
-            return quotes;
-        }
-
         try {
             Statement st = connection.createStatement();
             ResultSet rs = st.executeQuery(query);

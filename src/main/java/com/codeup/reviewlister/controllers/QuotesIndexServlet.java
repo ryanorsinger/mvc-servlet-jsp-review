@@ -10,9 +10,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
-@WebServlet(name="QuotesIndexServlet", urlPatterns = "/quotes/random")
-public class RandomQuoteServlet extends HttpServlet {
+@WebServlet(name="QuotesIndexServlet", urlPatterns = "/quotes")
+public class QuotesIndexServlet extends HttpServlet {
+
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Config config = new Config();
@@ -21,13 +24,13 @@ public class RandomQuoteServlet extends HttpServlet {
         QuotesDao quotesDao = new QuotesDao(config);
 
         // get all the quotes
-        Quote quote = quotesDao.random();
+        List<Quote> quotes = quotesDao.all();
 
         // Bind the quotes to the request object
-        request.setAttribute("quote", quote);
+        request.setAttribute("quotes", quotes);
 
         // send the response along w/ the data
-        request.getRequestDispatcher("/WEB-INF/quotes/show.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/quotes/index.jsp").forward(request, response);
 
     }
 }

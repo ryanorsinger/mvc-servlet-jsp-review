@@ -1,4 +1,4 @@
-package com.codeup.reviewlister.models;
+package com.codeup.reviewlister;
 
 public class Quote {
 
@@ -6,10 +6,15 @@ public class Quote {
     private String author;
     private long id;
 
-    public Quote(String quote, String author, long id) {
+    public Quote(long id, String quote, String author) {
+        this.id = id;
         this.quote = quote;
         this.author = author;
-        this.id = id;
+    }
+
+    public Quote(String quote, String author) {
+        this.quote = quote;
+        this.author = author;
     }
 
     public String getQuote() {

@@ -25,7 +25,8 @@
 - This `README.md`
 - [MVC-Servlets-DAO-Diagram](./MVC-Servlets-DAO-Diagram.pdf) is a general diagram of how a request maps to a servlet and how a servlet communicates with DAOs.
 - [Specific-MVC-Servlets-DAO-Diagram](./Specific-MVC-Servlets-DAO-Diagram.pdf) is a specific diagram of the functionality of requesting a random quote. This diagrams the request-response for
-
+- [This Handout](./handout.pdf) features the table relating endpoints and request typs to the specific servlet and method they fire.
+- The diagrams and handout are ready to print!
 
 ## Getting the code to run
 - Copy `git@github.com:ryanorsinger/mvc-servlet-jsp-review.git` to your clipboard.
